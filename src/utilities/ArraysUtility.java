@@ -2,8 +2,7 @@ package utilities;
 
 import java.util.Arrays;
 
-public class ArraysUtility {
-
+public class ArraysUtility{
     //adds integer to an int array
     public static int[] addElement(int[] array, int number){
         /*
@@ -20,7 +19,7 @@ public class ArraysUtility {
 
         return result;
     }
-
+    // when i call this method i can pass one array and one integer, then it adds the integer to the array
 
     //adds double to a double array
     public static double[] addElement(double[] array,  double number){
@@ -161,6 +160,7 @@ public class ArraysUtility {
         return arr3;
     }
 
+
     // remove the element at given index of the array
     public static int[] remove(int[] array, int index){
 
@@ -248,7 +248,8 @@ public class ArraysUtility {
         return result;
     }
 
-    //create a method that can reverse an array of integer
+
+    //reverses the given integer array
     public static int[] reverse (int[] array){
         int[] result = new int[array.length];
         for (int i = array.length-1, j=0; i >=0; i--, j++){
@@ -257,7 +258,7 @@ public class ArraysUtility {
         return result;
     }
 
-    //create a method that can reverse an array of double
+    //reverses the given double array
     public static double[] reverse (double[] array){
         double[] result = new double[array.length];
         for (int i = array.length-1, j=0; i >=0; i--, j++){
@@ -266,7 +267,7 @@ public class ArraysUtility {
         return result;
     }
 
-    //create a method that can reverse an array of String
+    //reverses the given String array
     public static String[] reverse (String[] array){
         String[] result = new String[array.length];
         for (int i = array.length-1, j=0; i >=0; i--, j++){
@@ -275,7 +276,7 @@ public class ArraysUtility {
         return result;
     }
 
-    //create a method that can reverse an array of char
+    //reverses the given char array
     public static char[] reverse (char[] array){
         char[] result = new char[array.length];
         for (int i = array.length-1, j=0; i >=0; i--, j++){
@@ -285,7 +286,7 @@ public class ArraysUtility {
     }
 
 
-    // create a method that can CHECK/FIND element from int, double, char String
+    //checks if the given element is contained in the given array, returns boolean
     public static boolean contains(int[] array, int element){
 
         for (int each : array) {
@@ -297,6 +298,7 @@ public class ArraysUtility {
         return false;
     }
 
+    //checks if the given element is contained in the given array, returns boolean
     public static boolean contains(double[] array, double element){
 
         for (double each : array) {
@@ -308,6 +310,7 @@ public class ArraysUtility {
         return false;
     }
 
+    //checks if the given element is contained in the given array, returns boolean
     public static boolean contains(String[] array, String element){
 
         for (String each : array) {
@@ -319,6 +322,7 @@ public class ArraysUtility {
         return false;
     }
 
+    //checks if the given element is contained in the given array, returns boolean
     public static boolean contains(char[] array, char element){
 
         for (char each : array) {
@@ -330,57 +334,8 @@ public class ArraysUtility {
         return false;
     }
 
-    // create a method that can find UNIQUE element from int, double, char String
-    public static int frequency(int[] array, int element) {
-        int count = 0;
 
-        for (int each : array) {
-            if (each == element) {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-    public static int frequency(double[] array, double element) {
-        int count = 0;
-
-        for (double each : array) {
-            if (each == element) {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-    public static int frequency(String[] array, String element) {
-        int count = 0;
-
-        for (String each : array) {
-            if (each.equals(element)) {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-    public static int frequency(char[] array, char element) {
-        int count = 0;
-
-        for (char each : array) {
-            if (each == element) {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-
-
+    // returns the unique elements from the array
     public static int[] unique(int[] array){
         int[] result = {};
 
@@ -393,6 +348,7 @@ public class ArraysUtility {
         return result;
     }
 
+    // returns the unique elements from the array
     public static double[] unique(double[] array){
         double[] result = {};
 
@@ -405,6 +361,7 @@ public class ArraysUtility {
         return result;
     }
 
+    // returns the unique elements from the array
     public static String[] unique(String[] array){
         String[] result = {};
 
@@ -417,6 +374,7 @@ public class ArraysUtility {
         return result;
     }
 
+    // returns the unique elements from the array
     public static char[] unique(char[] array){
         char[] result = {};
 
@@ -427,6 +385,59 @@ public class ArraysUtility {
         }
 
         return result;
+    }
+
+
+    // returns the frequency of the given element for the given array
+    public static int frequency(int[] array, int element){
+        int count = 0;
+
+        for (int each : array) {
+            if(each == element){
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    // returns the frequency of the given element for the given array
+    public static int frequency(double[] array, double element){
+        int count = 0;
+
+        for (double each : array) {
+            if(each == element){
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    // returns the frequency of the given element for the given array
+    public static int frequency(String[] array, String element){
+        int count = 0;
+
+        for (String each : array) {
+            if(each.equals( element ) ){
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    // returns the frequency of the given element for the given array
+    public static int frequency(char[] array, char element){
+        int count = 0;
+
+        for (char each : array) {
+            if(each == element){
+                count++;
+            }
+        }
+
+        return count;
     }
 
 
@@ -481,6 +492,8 @@ public class ArraysUtility {
 
         return newArr;
     }
+
+
 
 
 }
