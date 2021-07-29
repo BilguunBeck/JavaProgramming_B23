@@ -3,7 +3,7 @@ package day_31_Recap;
 // import packageName.className
 
 
-import utilities.StringUtilities;
+import utilities.StringUtility;
 
 public class WarmUpTasks2 {
 
@@ -36,13 +36,13 @@ public class WarmUpTasks2 {
 
         String str = "Racecar";
 
-        boolean isPalindrome = StringUtilities.isPalindrome(str);
+        boolean isPalindrome = StringUtility.isPalindrome(str);
 
         System.out.println("isPalindrome = " + isPalindrome);
 
         String str2 = "CCYYBBEERRTTEEKK";
 
-        str2 = StringUtilities.removeDup(str2);
+        str2 = StringUtility.removeDup(str2);
 
         System.out.println(str2);
 

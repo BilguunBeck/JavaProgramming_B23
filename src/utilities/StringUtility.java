@@ -1,7 +1,7 @@
 package utilities;
 
 import java.util.Arrays;
-public class StringUtilities {
+public class StringUtility {
 
 
     //reverses any given string, and returns it
